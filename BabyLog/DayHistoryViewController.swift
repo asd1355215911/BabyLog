@@ -1,46 +1,38 @@
 //
-//  SecondViewController.swift
+//  DayHistoryViewController.swift
 //  BabyLog
 //
-//  Created by mj.zhou on 15/1/19.
+//  Created by mj.zhou on 15/3/6.
 //  Copyright (c) 2015年 mjstudio. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class DayHistoryViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var tb:UITableView = UITableView()
-    
     var list = [HistroyDayItem]()
-
-    @IBOutlet var tbView: UIControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib。
-        
-        tb.delegate=self
-        tb.dataSource=self
-        let h = tbView.bounds.size.height
-        let w = tbView.bounds.size.width
-        tb.frame=CGRectMake(0,0,w,h)
-        tbView.addSubview(tb)
+        // Do any additional setup after loading the view, typically from a nib.
         
         var item = HistroyDayItem()
-        item.id="1"
-        item.title="2015-01-01"
-        item.subTitle="milk100ml water200ml shit4ci"
-        
-        var item1 = HistroyDayItem()
-        item1.id="2"
-        item1.title="2015-01-02"
-        item1.subTitle="milk100ml water200ml shit4ci"
-
-        
+        item.subTitle="喂奶"
+        item.title="2015-01-01 17:00"
         list.append(item)
-        list.append(item1)
+        
+        
+        self.navigationItem.title="2015-01-01"
+        
+        let size = self.view.bounds.size;
+        let tableView = UITableView(frame: CGRectMake(0,0, size.width,size.height))
+        tableView.delegate=self
+        tableView.dataSource=self
+        
+        self.view.addSubview(tableView)
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -61,25 +53,24 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
         let index = indexPath.row
         
         var hisItem = list[index]
-
+        
         cell.textLabel?.text = hisItem.subTitle
         cell.detailTextLabel?.text = hisItem.title
-        cell.accessoryType=UITableViewCellAccessoryType.DisclosureIndicator
+       // cell.accessoryType=UITableViewCellAccessoryType.DisclosureIndicator
         
         return cell
         
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
-    {
-        let index = indexPath.row
-        let anyObj:AnyObject? = self.storyboard?.instantiateViewControllerWithIdentifier("sb_historyDayViewController")
-        if let vc = anyObj as? DayHistoryViewController{
-           
-            self.navigationController?.pushViewController(vc, animated: true)
+        func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+        {
+            list.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Top)
         }
-        
-    }
     
-}
+        func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle
+        {
+            return UITableViewCellEditingStyle.Delete
+        }
 
+}

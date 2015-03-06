@@ -12,6 +12,8 @@
 		4538BB831AA6E9AB00C80B4B /* Db.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BB821AA6E9AB00C80B4B /* Db.swift */; };
 		4538BB851AA6F95600C80B4B /* LogDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BB841AA6F95600C80B4B /* LogDetail.swift */; };
 		4538BB881AA7653B00C80B4B /* date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BB871AA7653B00C80B4B /* date.swift */; };
+		4597D8731AA99D2E00A453D7 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597D8721AA99D2E00A453D7 /* HistoryItem.swift */; };
+		4597D8751AA9BEEC00A453D7 /* DayHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597D8741AA9BEEC00A453D7 /* DayHistoryViewController.swift */; };
 		459B66FF1AA4DE09007838F7 /* SelectDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B66FE1AA4DE09007838F7 /* SelectDateController.swift */; };
 		45AC76E51A6C200600705474 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC76E41A6C200600705474 /* AppDelegate.swift */; };
 		45AC76E71A6C200600705474 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC76E61A6C200600705474 /* FirstViewController.swift */; };
@@ -39,6 +41,8 @@
 		4538BB821AA6E9AB00C80B4B /* Db.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Db.swift; sourceTree = "<group>"; };
 		4538BB841AA6F95600C80B4B /* LogDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDetail.swift; sourceTree = "<group>"; };
 		4538BB871AA7653B00C80B4B /* date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = date.swift; sourceTree = "<group>"; };
+		4597D8721AA99D2E00A453D7 /* HistoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		4597D8741AA9BEEC00A453D7 /* DayHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayHistoryViewController.swift; sourceTree = "<group>"; };
 		459B66FE1AA4DE09007838F7 /* SelectDateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDateController.swift; sourceTree = "<group>"; };
 		45AC76DF1A6C200600705474 /* BabyLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AC76E31A6C200600705474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 				4538BB801AA6E78B00C80B4B /* FeedLog.swift */,
 				4538BB821AA6E9AB00C80B4B /* Db.swift */,
 				4538BB841AA6F95600C80B4B /* LogDetail.swift */,
+				4597D8721AA99D2E00A453D7 /* HistoryItem.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 				4538BB7F1AA6E75A00C80B4B /* Models */,
 				45FB5D471A794B24004F1759 /* AddViewController.swift */,
 				45AC76E41A6C200600705474 /* AppDelegate.swift */,
+				4597D8741AA9BEEC00A453D7 /* DayHistoryViewController.swift */,
 				45AC76E61A6C200600705474 /* FirstViewController.swift */,
 				45AC76E81A6C200600705474 /* SecondViewController.swift */,
 				459B66FE1AA4DE09007838F7 /* SelectDateController.swift */,
@@ -255,10 +261,12 @@
 				45AC76E91A6C200600705474 /* SecondViewController.swift in Sources */,
 				4538BB831AA6E9AB00C80B4B /* Db.swift in Sources */,
 				4538BB7E1AA5C4DB00C80B4B /* protocol.swift in Sources */,
+				4597D8731AA99D2E00A453D7 /* HistoryItem.swift in Sources */,
 				4538BB881AA7653B00C80B4B /* date.swift in Sources */,
 				45AC76E51A6C200600705474 /* AppDelegate.swift in Sources */,
 				459B66FF1AA4DE09007838F7 /* SelectDateController.swift in Sources */,
 				45FB5D481A794B24004F1759 /* AddViewController.swift in Sources */,
+				4597D8751AA9BEEC00A453D7 /* DayHistoryViewController.swift in Sources */,
 				4538BB811AA6E78B00C80B4B /* FeedLog.swift in Sources */,
 				45AC76E71A6C200600705474 /* FirstViewController.swift in Sources */,
 				4538BB851AA6F95600C80B4B /* LogDetail.swift in Sources */,

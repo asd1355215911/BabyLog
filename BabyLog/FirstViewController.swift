@@ -17,6 +17,7 @@ class FirstViewController: UIViewController,FirstViewControllerDelegate {
 
     @IBOutlet weak var lblWater: UILabel!
     @IBOutlet weak var lblNow: UILabel!
+   
     
     let dateFormatter=NSDateFormatter()
     
@@ -27,19 +28,18 @@ class FirstViewController: UIViewController,FirstViewControllerDelegate {
         
         setLogDetail()
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func onAddLog(sender: AnyObject) {
+        
+    @IBAction func onShowAddView(sender: UIBarButtonItem) {
         let anyObj:AnyObject? = self.storyboard?.instantiateViewControllerWithIdentifier("sb_addViewController")
         if let vc = anyObj as? AddViewController{
             vc.delegate = self
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        
+
     }
     
     func setLogDetail(){

@@ -44,34 +44,6 @@
                                     <rect key="frame" x="167" y="210" width="65.5" height="20.5"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K98-1d-dpq">
-                                <rect key="frame" x="206" y="338" width="188" height="69"/>
-                                <color key="backgroundColor" red="0.0" green="0.81932824242782409" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="188" id="LBF-ns-zky"/>
-                                    <constraint firstAttribute="height" constant="69" id="Vbi-oZ-yNR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="记一次">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="LBF-ns-zky"/>
-                                        <exclude reference="Vbi-oZ-yNR"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="LBF-ns-zky"/>
-                                        <include reference="Vbi-oZ-yNR"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="onAddLog:" destination="9pv-A4-QxB" eventType="touchUpInside" id="GhV-6x-SPz"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sw-PU-AFq">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
@@ -106,14 +78,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="6Rl-Bq-uOG" secondAttribute="centerX" constant="-0.5" id="2ey-cX-cAo"/>
-                            <constraint firstAttribute="centerX" secondItem="K98-1d-dpq" secondAttribute="centerX" id="74c-LV-44Z"/>
                             <constraint firstItem="6Rl-Bq-uOG" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="250" id="8rI-ZG-y9U"/>
                             <constraint firstItem="hQX-6S-uIO" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="160" id="EHf-Tj-nJS"/>
                             <constraint firstAttribute="centerX" secondItem="Uq4-Mg-Uvu" secondAttribute="centerX" id="I7K-3R-ksy"/>
                             <constraint firstAttribute="centerX" secondItem="3sw-PU-AFq" secondAttribute="centerX" constant="-0.5" id="MQM-Cy-dxX"/>
                             <constraint firstAttribute="centerX" secondItem="wkg-W8-Bif" secondAttribute="centerX" id="VkJ-kg-y6z"/>
                             <constraint firstAttribute="centerX" secondItem="7gM-f6-XUz" secondAttribute="centerX" constant="-0.5" id="Vyh-m2-r83"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="K98-1d-dpq" secondAttribute="bottom" constant="60" id="YM3-iO-1wI"/>
                             <constraint firstItem="g4t-5e-fQa" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="85" id="ZnW-9Q-icI"/>
                             <constraint firstItem="wkg-W8-Bif" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="190" id="d3S-3R-u3R"/>
                             <constraint firstItem="3sw-PU-AFq" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="35" id="da4-Kp-tCE"/>
@@ -147,8 +117,6 @@
                                 <exclude reference="ud7-tA-Vtd"/>
                                 <exclude reference="k43-yL-RZL"/>
                                 <exclude reference="VkJ-kg-y6z"/>
-                                <exclude reference="74c-LV-44Z"/>
-                                <exclude reference="YM3-iO-1wI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -174,12 +142,16 @@
                                 <include reference="ud7-tA-Vtd"/>
                                 <include reference="k43-yL-RZL"/>
                                 <include reference="VkJ-kg-y6z"/>
-                                <include reference="74c-LV-44Z"/>
-                                <include reference="YM3-iO-1wI"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="44j-kn-L5e"/>
+                    <navigationItem key="navigationItem" id="44j-kn-L5e">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2Gh-c0-gTW">
+                            <connections>
+                                <action selector="onShowAddView:" destination="9pv-A4-QxB" id="CkV-ji-AeH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lblLastDrinkMilkTime" destination="7gM-f6-XUz" id="ibz-7c-pD3"/>
                         <outlet property="lblLastDrinkingTime" destination="6Rl-Bq-uOG" id="igX-ZH-cpN"/>
@@ -379,24 +351,44 @@
             </objects>
             <point key="canvasLocation" x="3060" y="-337.5"/>
         </scene>
-        <!--Second-->
+        <!--历史-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="BabyLog" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" title="历史" id="2Le-Ot-pyI"/>
+                    <connections>
+                        <outlet property="tbView" destination="QS5-Rx-YEW" id="ZLm-8E-rob"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="1741.5" y="353.25"/>
+        </scene>
+        <!--Day History View Controller-->
+        <scene sceneID="7aj-qd-b0w">
+            <objects>
+                <viewController storyboardIdentifier="sb_historyDayViewController" id="H7z-Me-zSX" customClass="DayHistoryViewController" customModule="BabyLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LQW-as-mKr"/>
+                        <viewControllerLayoutGuide type="bottom" id="izs-mA-X60"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uCk-0w-yqE">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8R-3m-BiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2419.5" y="353.25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -410,7 +402,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="5Tg-qM-AQY" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="U1W-ep-Ecm" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -435,6 +427,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WpY-L5-9dH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="823.5" y="-328.5"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="hoy-IE-fcT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U1W-ep-Ecm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GBq-Do-mkM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="G7b-p9-BvO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8qN-7Y-0A1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823.5" y="353.25"/>
         </scene>
     </scenes>
     <resources>
