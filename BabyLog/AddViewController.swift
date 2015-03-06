@@ -108,7 +108,9 @@ class AddViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDel
          log.count = count!
         }
        
-        log.date = selectDate
+        log.logTime = selectDate
+        let logDay = dateFormatter.stringFromDate(selectDate)
+        log.logDay = logDay
         log.id=NSUUID().UUIDString
         log.remark=remark
         log.type=type

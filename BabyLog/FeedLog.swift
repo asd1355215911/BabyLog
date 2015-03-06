@@ -16,7 +16,9 @@ class FeedLog{
     
     var type = 0
     
-    var date = NSDate()
+    var logTime = NSDate()
+    
+    var logDay = ""
     
     var remark = ""
 }

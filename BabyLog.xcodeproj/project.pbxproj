@@ -14,6 +14,12 @@
 		4538BB881AA7653B00C80B4B /* date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BB871AA7653B00C80B4B /* date.swift */; };
 		4597D8731AA99D2E00A453D7 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597D8721AA99D2E00A453D7 /* HistoryItem.swift */; };
 		4597D8751AA9BEEC00A453D7 /* DayHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597D8741AA9BEEC00A453D7 /* DayHistoryViewController.swift */; };
+		4597D9641AAA24ED00A453D7 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4597D95B1AAA24ED00A453D7 /* FMDatabase.m */; };
+		4597D9651AAA24ED00A453D7 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4597D95D1AAA24ED00A453D7 /* FMResultSet.m */; };
+		4597D9661AAA24ED00A453D7 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4597D95F1AAA24ED00A453D7 /* FMDatabaseQueue.m */; };
+		4597D9671AAA24ED00A453D7 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4597D9611AAA24ED00A453D7 /* FMDatabaseAdditions.m */; };
+		4597D9681AAA24ED00A453D7 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4597D9631AAA24ED00A453D7 /* FMDatabasePool.m */; };
+		4597D96B1AAA254900A453D7 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4597D96A1AAA254900A453D7 /* libsqlite3.0.dylib */; };
 		459B66FF1AA4DE09007838F7 /* SelectDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B66FE1AA4DE09007838F7 /* SelectDateController.swift */; };
 		45AC76E51A6C200600705474 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC76E41A6C200600705474 /* AppDelegate.swift */; };
 		45AC76E71A6C200600705474 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC76E61A6C200600705474 /* FirstViewController.swift */; };
@@ -43,6 +49,19 @@
 		4538BB871AA7653B00C80B4B /* date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = date.swift; sourceTree = "<group>"; };
 		4597D8721AA99D2E00A453D7 /* HistoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
 		4597D8741AA9BEEC00A453D7 /* DayHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayHistoryViewController.swift; sourceTree = "<group>"; };
+		4597D9581AAA24ED00A453D7 /* BabyLog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BabyLog-Bridging-Header.h"; sourceTree = "<group>"; };
+		4597D9591AAA24ED00A453D7 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		4597D95A1AAA24ED00A453D7 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		4597D95B1AAA24ED00A453D7 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		4597D95C1AAA24ED00A453D7 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		4597D95D1AAA24ED00A453D7 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		4597D95E1AAA24ED00A453D7 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		4597D95F1AAA24ED00A453D7 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		4597D9601AAA24ED00A453D7 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		4597D9611AAA24ED00A453D7 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		4597D9621AAA24ED00A453D7 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		4597D9631AAA24ED00A453D7 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		4597D96A1AAA254900A453D7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		459B66FE1AA4DE09007838F7 /* SelectDateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDateController.swift; sourceTree = "<group>"; };
 		45AC76DF1A6C200600705474 /* BabyLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AC76E31A6C200600705474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4597D96B1AAA254900A453D7 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				4538BB801AA6E78B00C80B4B /* FeedLog.swift */,
-				4538BB821AA6E9AB00C80B4B /* Db.swift */,
 				4538BB841AA6F95600C80B4B /* LogDetail.swift */,
 				4597D8721AA99D2E00A453D7 /* HistoryItem.swift */,
 			);
@@ -91,13 +110,34 @@
 			isa = PBXGroup;
 			children = (
 				4538BB871AA7653B00C80B4B /* date.swift */,
+				4538BB821AA6E9AB00C80B4B /* Db.swift */,
 			);
 			name = Tools;
+			sourceTree = "<group>";
+		};
+		4597D9691AAA250C00A453D7 /* dbfm */ = {
+			isa = PBXGroup;
+			children = (
+				4597D9591AAA24ED00A453D7 /* FMDB.h */,
+				4597D95A1AAA24ED00A453D7 /* FMDatabase.h */,
+				4597D95B1AAA24ED00A453D7 /* FMDatabase.m */,
+				4597D95C1AAA24ED00A453D7 /* FMResultSet.h */,
+				4597D95D1AAA24ED00A453D7 /* FMResultSet.m */,
+				4597D95E1AAA24ED00A453D7 /* FMDatabaseQueue.h */,
+				4597D95F1AAA24ED00A453D7 /* FMDatabaseQueue.m */,
+				4597D9601AAA24ED00A453D7 /* FMDatabaseAdditions.h */,
+				4597D9611AAA24ED00A453D7 /* FMDatabaseAdditions.m */,
+				4597D9621AAA24ED00A453D7 /* FMDatabasePool.h */,
+				4597D9631AAA24ED00A453D7 /* FMDatabasePool.m */,
+				4597D9581AAA24ED00A453D7 /* BabyLog-Bridging-Header.h */,
+			);
+			name = dbfm;
 			sourceTree = "<group>";
 		};
 		45AC76D61A6C200600705474 = {
 			isa = PBXGroup;
 			children = (
+				4597D96A1AAA254900A453D7 /* libsqlite3.0.dylib */,
 				45AC76E11A6C200600705474 /* BabyLog */,
 				45AC76F91A6C200600705474 /* BabyLogTests */,
 				45AC76E01A6C200600705474 /* Products */,
@@ -116,6 +156,7 @@
 		45AC76E11A6C200600705474 /* BabyLog */ = {
 			isa = PBXGroup;
 			children = (
+				4597D9691AAA250C00A453D7 /* dbfm */,
 				4538BB861AA7652200C80B4B /* Tools */,
 				4538BB7F1AA6E75A00C80B4B /* Models */,
 				45FB5D471A794B24004F1759 /* AddViewController.swift */,
@@ -260,8 +301,12 @@
 			files = (
 				45AC76E91A6C200600705474 /* SecondViewController.swift in Sources */,
 				4538BB831AA6E9AB00C80B4B /* Db.swift in Sources */,
+				4597D9651AAA24ED00A453D7 /* FMResultSet.m in Sources */,
+				4597D9641AAA24ED00A453D7 /* FMDatabase.m in Sources */,
 				4538BB7E1AA5C4DB00C80B4B /* protocol.swift in Sources */,
+				4597D9661AAA24ED00A453D7 /* FMDatabaseQueue.m in Sources */,
 				4597D8731AA99D2E00A453D7 /* HistoryItem.swift in Sources */,
+				4597D9671AAA24ED00A453D7 /* FMDatabaseAdditions.m in Sources */,
 				4538BB881AA7653B00C80B4B /* date.swift in Sources */,
 				45AC76E51A6C200600705474 /* AppDelegate.swift in Sources */,
 				459B66FF1AA4DE09007838F7 /* SelectDateController.swift in Sources */,
@@ -270,6 +315,7 @@
 				4538BB811AA6E78B00C80B4B /* FeedLog.swift in Sources */,
 				45AC76E71A6C200600705474 /* FirstViewController.swift in Sources */,
 				4538BB851AA6F95600C80B4B /* LogDetail.swift in Sources */,
+				4597D9681AAA24ED00A453D7 /* FMDatabasePool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,10 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BabyLog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BabyLog/BabyLog-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -404,10 +453,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BabyLog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BabyLog/BabyLog-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

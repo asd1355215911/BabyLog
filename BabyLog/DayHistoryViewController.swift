@@ -56,7 +56,6 @@ class DayHistoryViewController: UIViewController,UITableViewDelegate,UITableView
         
         cell.textLabel?.text = hisItem.subTitle
         cell.detailTextLabel?.text = hisItem.title
-       // cell.accessoryType=UITableViewCellAccessoryType.DisclosureIndicator
         
         return cell
         
