@@ -38,6 +38,9 @@ class AddViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDel
         let now = dateFormatter.stringFromDate(NSDate())
         
         btnSelectDate.setTitle(now, forState: UIControlState.Normal)
+        
+        //self.hidesBottomBarWhenPushed = true
+
     }
     
     @IBAction func onFinishEdit(sender: AnyObject) {

@@ -40,7 +40,7 @@ class ChartViewController: UIViewController {
     private func setLineChart()
     {
         if lineChart == nil{
-            lineChart = PNLineChart(frame: CGRectMake(0, 50, self.view.bounds.width, 200))
+            lineChart = PNLineChart(frame: CGRectMake(0, 40, self.view.bounds.width, 200))
             view.addSubview(lineChart!)
 
         }
@@ -80,7 +80,7 @@ class ChartViewController: UIViewController {
         lineChart!.strokeChart()
         
         var legend = lineChart!.getLegendWithMaxWidth(200)
-        legend.frame = CGRectMake((self.view.frame.width-legend.frame.width)/2,250 , legend.frame.width, legend.frame.height)
+        legend.frame = CGRectMake((self.view.frame.width-legend.frame.width)/2,230 , legend.frame.width, legend.frame.height)
         view.addSubview(legend)
 
     }
@@ -98,7 +98,7 @@ class ChartViewController: UIViewController {
         
         var x = (view.frame.width-250)/2
         
-        pieChart = PNPieChart(frame: CGRectMake(x,300, 250, 250),items: [pData,pData1])
+        pieChart = PNPieChart(frame: CGRectMake(x,255, 250, 250),items: [pData,pData1])
         pieChart!.descriptionTextColor = UIColor.whiteColor()
         pieChart!.strokeChart()
         

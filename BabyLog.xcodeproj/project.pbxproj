@@ -16,6 +16,12 @@
 		458F80D61AAEBF8400EDDB3B /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F80D51AAEBF8400EDDB3B /* ChartViewController.swift */; };
 		458F80D81AAED6CC00EDDB3B /* LineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F80D71AAED6CC00EDDB3B /* LineData.swift */; };
 		458F80DC1AAEE5E800EDDB3B /* ColorTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F80DB1AAEE5E800EDDB3B /* ColorTool.swift */; };
+		458F80E41AAF4F7A00EDDB3B /* chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 458F80E21AAF4F7A00EDDB3B /* chart.png */; };
+		458F80E51AAF4F7A00EDDB3B /* chart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 458F80E31AAF4F7A00EDDB3B /* chart@2x.png */; };
+		458F80EC1AAF515100EDDB3B /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 458F80EA1AAF515100EDDB3B /* history.png */; };
+		458F80ED1AAF515100EDDB3B /* history@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 458F80EB1AAF515100EDDB3B /* history@2x.png */; };
+		458F80F01AAF52DE00EDDB3B /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 458F80EE1AAF52DE00EDDB3B /* main.png */; };
+		458F80F11AAF52DE00EDDB3B /* main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 458F80EF1AAF52DE00EDDB3B /* main@2x.png */; };
 		4597D8731AA99D2E00A453D7 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597D8721AA99D2E00A453D7 /* HistoryItem.swift */; };
 		4597D8751AA9BEEC00A453D7 /* DayHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597D8741AA9BEEC00A453D7 /* DayHistoryViewController.swift */; };
 		4597D9641AAA24ED00A453D7 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4597D95B1AAA24ED00A453D7 /* FMDatabase.m */; };
@@ -59,6 +65,12 @@
 		458F80D51AAEBF8400EDDB3B /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		458F80D71AAED6CC00EDDB3B /* LineData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineData.swift; sourceTree = "<group>"; };
 		458F80DB1AAEE5E800EDDB3B /* ColorTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTool.swift; sourceTree = "<group>"; };
+		458F80E21AAF4F7A00EDDB3B /* chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chart.png; sourceTree = "<group>"; };
+		458F80E31AAF4F7A00EDDB3B /* chart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chart@2x.png"; sourceTree = "<group>"; };
+		458F80EA1AAF515100EDDB3B /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
+		458F80EB1AAF515100EDDB3B /* history@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "history@2x.png"; sourceTree = "<group>"; };
+		458F80EE1AAF52DE00EDDB3B /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
+		458F80EF1AAF52DE00EDDB3B /* main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main@2x.png"; sourceTree = "<group>"; };
 		4597D8721AA99D2E00A453D7 /* HistoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
 		4597D8741AA9BEEC00A453D7 /* DayHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayHistoryViewController.swift; sourceTree = "<group>"; };
 		4597D9581AAA24ED00A453D7 /* BabyLog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BabyLog-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -144,6 +156,19 @@
 			name = Tools;
 			sourceTree = "<group>";
 		};
+		458F80DD1AAF4E7900EDDB3B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				458F80EE1AAF52DE00EDDB3B /* main.png */,
+				458F80EF1AAF52DE00EDDB3B /* main@2x.png */,
+				458F80E21AAF4F7A00EDDB3B /* chart.png */,
+				458F80EA1AAF515100EDDB3B /* history.png */,
+				458F80EB1AAF515100EDDB3B /* history@2x.png */,
+				458F80E31AAF4F7A00EDDB3B /* chart@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		4597D9691AAA250C00A453D7 /* dbfm */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +220,7 @@
 		45AC76E11A6C200600705474 /* BabyLog */ = {
 			isa = PBXGroup;
 			children = (
+				458F80DD1AAF4E7900EDDB3B /* Images */,
 				4538BB7F1AA6E75A00C80B4B /* Models */,
 				4597D96C1AAB39CC00A453D7 /* Services */,
 				4597D9691AAA250C00A453D7 /* dbfm */,
@@ -331,8 +357,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458F80F01AAF52DE00EDDB3B /* main.png in Resources */,
+				458F80EC1AAF515100EDDB3B /* history.png in Resources */,
 				45AC76EC1A6C200600705474 /* Main.storyboard in Resources */,
+				458F80F11AAF52DE00EDDB3B /* main@2x.png in Resources */,
 				45AC76F11A6C200600705474 /* LaunchScreen.xib in Resources */,
+				458F80ED1AAF515100EDDB3B /* history@2x.png in Resources */,
+				458F80E41AAF4F7A00EDDB3B /* chart.png in Resources */,
+				458F80E51AAF4F7A00EDDB3B /* chart@2x.png in Resources */,
 				45AC76EE1A6C200600705474 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

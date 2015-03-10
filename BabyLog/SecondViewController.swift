@@ -76,7 +76,7 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
         let anyObj:AnyObject? = self.storyboard?.instantiateViewControllerWithIdentifier("sb_historyDayViewController")
         if let vc = anyObj as? DayHistoryViewController{
             vc.selectedDay = list[index].day
-            
+            vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
             
         }

@@ -42,6 +42,7 @@ class FirstViewController: UIViewController,FirstViewControllerDelegate {
         let anyObj:AnyObject? = self.storyboard?.instantiateViewControllerWithIdentifier("sb_addViewController")
         if let vc = anyObj as? AddViewController{
             vc.delegate = self
+            vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
         }
 

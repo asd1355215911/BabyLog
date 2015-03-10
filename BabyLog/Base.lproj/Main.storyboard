@@ -467,11 +467,11 @@
             </objects>
             <point key="canvasLocation" x="-150" y="363"/>
         </scene>
-        <!--Main-->
+        <!--记录-->
         <scene sceneID="Q0A-CE-A59">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Tg-qM-AQY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Main" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="记录" image="main.png" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bq8-Mi-iqQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -486,11 +486,11 @@
             </objects>
             <point key="canvasLocation" x="823.5" y="-328.5"/>
         </scene>
-        <!--History-->
+        <!--历史-->
         <scene sceneID="hoy-IE-fcT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U1W-ep-Ecm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="历史" image="history.png" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GBq-Do-mkM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -505,7 +505,7 @@
             </objects>
             <point key="canvasLocation" x="823.5" y="353.25"/>
         </scene>
-        <!--Chart-->
+        <!--图表-->
         <scene sceneID="Nec-TE-kbc">
             <objects>
                 <viewController id="lvY-te-15n" customClass="ChartViewController" customModule="BabyLog" customModuleProvider="target" sceneMemberID="viewController">
@@ -518,7 +518,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chart" image="second" id="Yog-iw-SvG"/>
+                    <tabBarItem key="tabBarItem" title="图表" image="chart.png" id="Yog-iw-SvG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MkE-u2-AYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -526,7 +526,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="chart.png" width="32" height="32"/>
+        <image name="history.png" width="32" height="32"/>
+        <image name="main.png" width="32" height="32"/>
     </resources>
 </document>
