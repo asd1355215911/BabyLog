@@ -9,18 +9,11 @@
 import Foundation
 class HistroyDayItem {
     
-    var id = ""
+    var day = ""
     
-    var title=""
+    var milkCount=0
     
-    var subTitle=""
-}
-
-class HistoryItem{
-    var id = ""
+    var waterCount=0
     
-    var title=""
-    
-    var subTitle=""
-
+    var shitCount=0
 }

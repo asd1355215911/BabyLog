@@ -17,17 +17,19 @@ class DateTool{
         let mostUnits: NSCalendarUnit = .YearCalendarUnit | .MonthCalendarUnit | .DayCalendarUnit | .HourCalendarUnit | .MinuteCalendarUnit | .SecondCalendarUnit
         let components = NSCalendar.currentCalendar().components(mostUnits,fromDate:date, toDate:now, options:nil)
         
-        if components.minute<10{
-            return "刚刚"
+        if components.day>=1{
+            return String(components.day)+"天之前"
         }
-        else if (components.minute>10&&components.minute<60){
-            return String(components.minute)+"分钟之前"
-        }
-        else if components.hour<24{
+        
+        if (components.hour>=1&&components.hour<24){
             return String(components.hour)+"小时之前"
         }
+        
+        if components.minute>=10&&components.minute<60{
+            return String(components.minute)+"分钟之前"
+        }
         else{
-            return String(components.day)+"天之前"
+            return "刚刚"
         }
 
     }

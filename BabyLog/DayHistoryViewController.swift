@@ -8,28 +8,20 @@
 
 import UIKit
 
-class DayHistoryViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class DayHistoryViewController: UITableViewController {
 
-    var list = [HistroyDayItem]()
+    var list = [FeedLog]()
+    var selectedDay = ""
+    let dataFormatter = NSDateFormatter()
     
+   // @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        dataFormatter.dateFormat="yyyy-MM-dd HH:mm"
+        list = FeedLogService.getHistoryByDay(selectedDay)
         
-        var item = HistroyDayItem()
-        item.subTitle="喂奶"
-        item.title="2015-01-01 17:00"
-        list.append(item)
-        
-        
-        self.navigationItem.title="2015-01-01"
-        
-        let size = self.view.bounds.size;
-        let tableView = UITableView(frame: CGRectMake(0,0, size.width,size.height))
-        tableView.delegate=self
-        tableView.dataSource=self
-        
-        self.view.addSubview(tableView)
+        self.navigationItem.title=selectedDay
         
     }
     
@@ -38,7 +30,7 @@ class DayHistoryViewController: UIViewController,UITableViewDelegate,UITableView
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return list.count
     }
@@ -46,30 +38,43 @@ class DayHistoryViewController: UIViewController,UITableViewDelegate,UITableView
     // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
     // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier : "cell")
+        var cell =  tableView .dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? HistoryDayCell
         
         let index = indexPath.row
         
         var hisItem = list[index]
+        var typeName = TypeTool.typeToTitle(hisItem.type)
         
-        cell.textLabel?.text = hisItem.subTitle
-        cell.detailTextLabel?.text = hisItem.title
+        var unit = ""
+        if hisItem.type != 2{
+            unit = "ml"
+            cell!.detailText.text = "\(typeName) \(hisItem.count) \(unit)"
+        }
+        else{
+            cell!.detailText.text = typeName
+        }
+        cell!.remarkText.text = hisItem.remark.isEmpty ? "备注":hisItem.remark
+        cell!.timeText.text = dataFormatter.stringFromDate(hisItem.logTime)
         
-        return cell
+        //cell!.autoLayout()
+        
+        return cell!
         
     }
     
-        func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
-        {
-            list.removeAtIndex(indexPath.row)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Top)
-        }
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        let id = list[indexPath.row].id
+        FeedLogService.remove(id)
+        list.removeAtIndex(indexPath.row)
+        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Top)
+    }
     
-        func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle
-        {
-            return UITableViewCellEditingStyle.Delete
-        }
+    override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle
+    {
+        return UITableViewCellEditingStyle.Delete
+    }
 
 }

@@ -19,12 +19,15 @@ class AddViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDel
     
     var selectDate:NSDate=NSDate()
     var dateFormatter = NSDateFormatter()
+    var dateFormatter1 = NSDateFormatter()
     
     var delegate:FirstViewControllerDelegate!
    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        dateFormatter1.dateFormat="yyyy-MM-dd"
+        
         itemPicker.dataSource = self
         itemPicker.delegate=self
         
@@ -107,15 +110,19 @@ class AddViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDel
         else{
          log.count = count!
         }
+        
+        if type == 2{
+            log.count=1
+        }
        
         log.logTime = selectDate
-        let logDay = dateFormatter.stringFromDate(selectDate)
+        let logDay = dateFormatter1.stringFromDate(selectDate)
         log.logDay = logDay
         log.id=NSUUID().UUIDString
         log.remark=remark
         log.type=type
         
-        Db.insert(log)
+        FeedLogService.insert(log)
         
         delegate.setLogDetail()
         
@@ -124,7 +131,6 @@ class AddViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDel
     
     func setDate(date: NSDate) {
         selectDate=date
-        dateFormatter.dateFormat="yyyy-MM-dd HH:mm"
         let now = dateFormatter.stringFromDate(date)
         btnSelectDate.setTitle(now, forState: UIControlState.Normal)
     }

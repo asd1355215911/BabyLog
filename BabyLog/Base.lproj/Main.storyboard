@@ -354,7 +354,6 @@
         <!--历史-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="BabyLog" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
@@ -370,25 +369,83 @@
                         <outlet property="tbView" destination="QS5-Rx-YEW" id="ZLm-8E-rob"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1741.5" y="353.25"/>
         </scene>
         <!--Day History View Controller-->
-        <scene sceneID="7aj-qd-b0w">
+        <scene sceneID="DuE-uO-oQB">
             <objects>
-                <viewController storyboardIdentifier="sb_historyDayViewController" id="H7z-Me-zSX" customClass="DayHistoryViewController" customModule="BabyLog" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LQW-as-mKr"/>
-                        <viewControllerLayoutGuide type="bottom" id="izs-mA-X60"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uCk-0w-yqE">
+                <tableViewController storyboardIdentifier="sb_historyDayViewController" id="Any-Y3-BCF" customClass="DayHistoryViewController" customModule="BabyLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" id="euH-WR-t6o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V8R-3m-BiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="65" id="irT-4h-a6Q" customClass="HistoryDayCell" customModule="BabyLog" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="irT-4h-a6Q" id="Zzu-TB-kTJ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uT5-LC-bAa">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="155" y="0.0" width="42" height="20.5"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGp-VJ-pEE">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="155" y="22" width="40" height="19.5"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2o-a4-2iy">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="155" y="37" width="40" height="19.5"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="uT5-LC-bAa"/>
+                                            <exclude reference="FGp-VJ-pEE"/>
+                                            <exclude reference="x2o-a4-2iy"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="uT5-LC-bAa"/>
+                                            <include reference="FGp-VJ-pEE"/>
+                                            <include reference="x2o-a4-2iy"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="detailText" destination="uT5-LC-bAa" id="gjF-Zy-fn8"/>
+                                    <outlet property="remarkText" destination="FGp-VJ-pEE" id="dAw-0N-E6R"/>
+                                    <outlet property="timeText" destination="x2o-a4-2iy" id="iVK-eL-hMR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Any-Y3-BCF" id="nPg-pI-rc1"/>
+                            <outlet property="delegate" destination="Any-Y3-BCF" id="nQq-do-x0Q"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDk-Ou-Pra" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2419.5" y="353.25"/>
+            <point key="canvasLocation" x="2448" y="353.25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -403,17 +460,18 @@
                     <connections>
                         <segue destination="5Tg-qM-AQY" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="U1W-ep-Ecm" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="lvY-te-15n" kind="relationship" relationship="viewControllers" id="hbC-wE-iqq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-150" y="363"/>
         </scene>
-        <!--First-->
+        <!--Main-->
         <scene sceneID="Q0A-CE-A59">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Tg-qM-AQY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Main" image="first" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bq8-Mi-iqQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -428,11 +486,11 @@
             </objects>
             <point key="canvasLocation" x="823.5" y="-328.5"/>
         </scene>
-        <!--Second-->
+        <!--History-->
         <scene sceneID="hoy-IE-fcT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U1W-ep-Ecm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="History" image="second" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GBq-Do-mkM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -446,6 +504,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qN-7Y-0A1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="823.5" y="353.25"/>
+        </scene>
+        <!--Chart-->
+        <scene sceneID="Nec-TE-kbc">
+            <objects>
+                <viewController id="lvY-te-15n" customClass="ChartViewController" customModule="BabyLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pPF-j6-LVm"/>
+                        <viewControllerLayoutGuide type="bottom" id="NnD-LL-HsZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pdA-w7-Ag2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chart" image="second" id="Yog-iw-SvG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MkE-u2-AYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823.5" y="1051.5"/>
         </scene>
     </scenes>
     <resources>

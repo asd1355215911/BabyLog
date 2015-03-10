@@ -23,11 +23,16 @@ class FirstViewController: UIViewController,FirstViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dateFormatter.dateFormat="yyyy-MM-dd"
-        // Do any additional setup after loading the view, typically from a nib.
         
-        setLogDetail()
+        dateFormatter.dateFormat="yyyy-MM-dd"
+        
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        setLogDetail()
+        println("1st view will apper")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -43,9 +48,9 @@ class FirstViewController: UIViewController,FirstViewControllerDelegate {
     }
     
     func setLogDetail(){
-        let detail = Db.getDetail()
+        let detail = FeedLogService.getDetail()
         lblLastDrinkMilkTime.text=detail.lastDrinkMilkDesc.isEmpty ? "" : "最近喂奶\(detail.lastDrinkMilkDesc)"
-        lblLastDrinkingTime.text=detail.lastDrinkWaterDesc.isEmpty ? "" : "最近喝水\(detail.lastDrinkMilkDesc)"
+        lblLastDrinkingTime.text=detail.lastDrinkWaterDesc.isEmpty ? "" : "最近喝水\(detail.lastDrinkWaterDesc)"
         lblLastShitTime.text=detail.lastShitDesc.isEmpty ? "" : "最近便便\(detail.lastShitDesc)"
         
         lblShit.text="今日便便\(detail.shitCount)次"

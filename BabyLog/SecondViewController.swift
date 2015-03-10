@@ -26,19 +26,19 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
         tb.frame=CGRectMake(0,0,w,h)
         tbView.addSubview(tb)
         
-        var item = HistroyDayItem()
-        item.id="1"
-        item.title="2015-01-01"
-        item.subTitle="milk100ml water200ml shit4ci"
         
-        var item1 = HistroyDayItem()
-        item1.id="2"
-        item1.title="2015-01-02"
-        item1.subTitle="milk100ml water200ml shit4ci"
-
+    }
+    
+    override func viewWillAppear(animated: Bool) {
         
-        list.append(item)
-        list.append(item1)
+        setHistory()
+        tb.reloadData()
+        println("second view will apper")
+        
+    }
+    
+    func setHistory(){
+        list = FeedLogService.historyDayList()
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,8 +62,8 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         var hisItem = list[index]
 
-        cell.textLabel?.text = hisItem.subTitle
-        cell.detailTextLabel?.text = hisItem.title
+        cell.textLabel?.text = "奶粉\(hisItem.milkCount)ml 开水\(hisItem.waterCount)ml 便便\(hisItem.shitCount)次"
+        cell.detailTextLabel?.text = hisItem.day
         cell.accessoryType=UITableViewCellAccessoryType.DisclosureIndicator
         
         return cell
@@ -75,8 +75,10 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
         let index = indexPath.row
         let anyObj:AnyObject? = self.storyboard?.instantiateViewControllerWithIdentifier("sb_historyDayViewController")
         if let vc = anyObj as? DayHistoryViewController{
-           
+            vc.selectedDay = list[index].day
+            
             self.navigationController?.pushViewController(vc, animated: true)
+            
         }
         
     }

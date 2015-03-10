@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DD9A876F80E80BC65270678 /* libPods-BabyLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 537CC5C4C50BBC8347E9B041 /* libPods-BabyLog.a */; };
 		4538BB7E1AA5C4DB00C80B4B /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BB7D1AA5C4DB00C80B4B /* protocol.swift */; };
 		4538BB811AA6E78B00C80B4B /* FeedLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BB801AA6E78B00C80B4B /* FeedLog.swift */; };
 		4538BB831AA6E9AB00C80B4B /* Db.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BB821AA6E9AB00C80B4B /* Db.swift */; };
 		4538BB851AA6F95600C80B4B /* LogDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BB841AA6F95600C80B4B /* LogDetail.swift */; };
-		4538BB881AA7653B00C80B4B /* date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BB871AA7653B00C80B4B /* date.swift */; };
+		4538BB881AA7653B00C80B4B /* DateTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BB871AA7653B00C80B4B /* DateTool.swift */; };
+		458F80D61AAEBF8400EDDB3B /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F80D51AAEBF8400EDDB3B /* ChartViewController.swift */; };
+		458F80D81AAED6CC00EDDB3B /* LineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F80D71AAED6CC00EDDB3B /* LineData.swift */; };
+		458F80DC1AAEE5E800EDDB3B /* ColorTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F80DB1AAEE5E800EDDB3B /* ColorTool.swift */; };
 		4597D8731AA99D2E00A453D7 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597D8721AA99D2E00A453D7 /* HistoryItem.swift */; };
 		4597D8751AA9BEEC00A453D7 /* DayHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597D8741AA9BEEC00A453D7 /* DayHistoryViewController.swift */; };
 		4597D9641AAA24ED00A453D7 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4597D95B1AAA24ED00A453D7 /* FMDatabase.m */; };
@@ -20,6 +24,9 @@
 		4597D9671AAA24ED00A453D7 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4597D9611AAA24ED00A453D7 /* FMDatabaseAdditions.m */; };
 		4597D9681AAA24ED00A453D7 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4597D9631AAA24ED00A453D7 /* FMDatabasePool.m */; };
 		4597D96B1AAA254900A453D7 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4597D96A1AAA254900A453D7 /* libsqlite3.0.dylib */; };
+		4597D96E1AAB39E400A453D7 /* FeedLogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597D96D1AAB39E400A453D7 /* FeedLogService.swift */; };
+		4597D9701AAB3B3700A453D7 /* TypeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597D96F1AAB3B3700A453D7 /* TypeTool.swift */; };
+		4597D9721AAB768A00A453D7 /* HistoryDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597D9711AAB768A00A453D7 /* HistoryDayCell.swift */; };
 		459B66FF1AA4DE09007838F7 /* SelectDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B66FE1AA4DE09007838F7 /* SelectDateController.swift */; };
 		45AC76E51A6C200600705474 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC76E41A6C200600705474 /* AppDelegate.swift */; };
 		45AC76E71A6C200600705474 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC76E61A6C200600705474 /* FirstViewController.swift */; };
@@ -42,11 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C81AD5E3E725CF8CD147E61 /* Pods-BabyLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyLog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabyLog/Pods-BabyLog.debug.xcconfig"; sourceTree = "<group>"; };
+		0F03C88175B86E57EB059782 /* Pods-BabyLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyLog.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabyLog/Pods-BabyLog.release.xcconfig"; sourceTree = "<group>"; };
 		4538BB7D1AA5C4DB00C80B4B /* protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
 		4538BB801AA6E78B00C80B4B /* FeedLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLog.swift; sourceTree = "<group>"; };
 		4538BB821AA6E9AB00C80B4B /* Db.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Db.swift; sourceTree = "<group>"; };
 		4538BB841AA6F95600C80B4B /* LogDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDetail.swift; sourceTree = "<group>"; };
-		4538BB871AA7653B00C80B4B /* date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = date.swift; sourceTree = "<group>"; };
+		4538BB871AA7653B00C80B4B /* DateTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTool.swift; sourceTree = "<group>"; };
+		458F80D51AAEBF8400EDDB3B /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		458F80D71AAED6CC00EDDB3B /* LineData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineData.swift; sourceTree = "<group>"; };
+		458F80DB1AAEE5E800EDDB3B /* ColorTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTool.swift; sourceTree = "<group>"; };
 		4597D8721AA99D2E00A453D7 /* HistoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
 		4597D8741AA9BEEC00A453D7 /* DayHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayHistoryViewController.swift; sourceTree = "<group>"; };
 		4597D9581AAA24ED00A453D7 /* BabyLog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BabyLog-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -62,6 +74,9 @@
 		4597D9621AAA24ED00A453D7 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
 		4597D9631AAA24ED00A453D7 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		4597D96A1AAA254900A453D7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		4597D96D1AAB39E400A453D7 /* FeedLogService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLogService.swift; sourceTree = "<group>"; };
+		4597D96F1AAB3B3700A453D7 /* TypeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeTool.swift; sourceTree = "<group>"; };
+		4597D9711AAB768A00A453D7 /* HistoryDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDayCell.swift; sourceTree = "<group>"; };
 		459B66FE1AA4DE09007838F7 /* SelectDateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDateController.swift; sourceTree = "<group>"; };
 		45AC76DF1A6C200600705474 /* BabyLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AC76E31A6C200600705474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +90,7 @@
 		45AC76FB1A6C200600705474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45AC76FC1A6C200600705474 /* BabyLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyLogTests.swift; sourceTree = "<group>"; };
 		45FB5D471A794B24004F1759 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		537CC5C4C50BBC8347E9B041 /* libPods-BabyLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabyLog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4597D96B1AAA254900A453D7 /* libsqlite3.0.dylib in Frameworks */,
+				2DD9A876F80E80BC65270678 /* libPods-BabyLog.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +113,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26C362ECAABE876A9C43998E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C81AD5E3E725CF8CD147E61 /* Pods-BabyLog.debug.xcconfig */,
+				0F03C88175B86E57EB059782 /* Pods-BabyLog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4538BB7F1AA6E75A00C80B4B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				4538BB801AA6E78B00C80B4B /* FeedLog.swift */,
 				4538BB841AA6F95600C80B4B /* LogDetail.swift */,
 				4597D8721AA99D2E00A453D7 /* HistoryItem.swift */,
+				458F80D71AAED6CC00EDDB3B /* LineData.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -109,8 +136,10 @@
 		4538BB861AA7652200C80B4B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				4538BB871AA7653B00C80B4B /* date.swift */,
+				4538BB871AA7653B00C80B4B /* DateTool.swift */,
+				4597D96F1AAB3B3700A453D7 /* TypeTool.swift */,
 				4538BB821AA6E9AB00C80B4B /* Db.swift */,
+				458F80DB1AAEE5E800EDDB3B /* ColorTool.swift */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -134,6 +163,14 @@
 			name = dbfm;
 			sourceTree = "<group>";
 		};
+		4597D96C1AAB39CC00A453D7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4597D96D1AAB39E400A453D7 /* FeedLogService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		45AC76D61A6C200600705474 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +178,8 @@
 				45AC76E11A6C200600705474 /* BabyLog */,
 				45AC76F91A6C200600705474 /* BabyLogTests */,
 				45AC76E01A6C200600705474 /* Products */,
+				26C362ECAABE876A9C43998E /* Pods */,
+				C8D5E46C540473D69690331B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,14 +195,17 @@
 		45AC76E11A6C200600705474 /* BabyLog */ = {
 			isa = PBXGroup;
 			children = (
+				4538BB7F1AA6E75A00C80B4B /* Models */,
+				4597D96C1AAB39CC00A453D7 /* Services */,
 				4597D9691AAA250C00A453D7 /* dbfm */,
 				4538BB861AA7652200C80B4B /* Tools */,
-				4538BB7F1AA6E75A00C80B4B /* Models */,
 				45FB5D471A794B24004F1759 /* AddViewController.swift */,
 				45AC76E41A6C200600705474 /* AppDelegate.swift */,
 				4597D8741AA9BEEC00A453D7 /* DayHistoryViewController.swift */,
+				4597D9711AAB768A00A453D7 /* HistoryDayCell.swift */,
 				45AC76E61A6C200600705474 /* FirstViewController.swift */,
 				45AC76E81A6C200600705474 /* SecondViewController.swift */,
+				458F80D51AAEBF8400EDDB3B /* ChartViewController.swift */,
 				459B66FE1AA4DE09007838F7 /* SelectDateController.swift */,
 				45AC76EA1A6C200600705474 /* Main.storyboard */,
 				45AC76ED1A6C200600705474 /* Images.xcassets */,
@@ -199,6 +241,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C8D5E46C540473D69690331B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				537CC5C4C50BBC8347E9B041 /* libPods-BabyLog.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,9 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45AC77001A6C200600705474 /* Build configuration list for PBXNativeTarget "BabyLog" */;
 			buildPhases = (
+				22998FC8FCB24EF7E77AFE96 /* Check Pods Manifest.lock */,
 				45AC76DB1A6C200600705474 /* Sources */,
 				45AC76DC1A6C200600705474 /* Frameworks */,
 				45AC76DD1A6C200600705474 /* Resources */,
+				DE231F3C4541CADD5B7D3B24 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,28 +346,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22998FC8FCB24EF7E77AFE96 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE231F3C4541CADD5B7D3B24 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabyLog/Pods-BabyLog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		45AC76DB1A6C200600705474 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4597D96E1AAB39E400A453D7 /* FeedLogService.swift in Sources */,
 				45AC76E91A6C200600705474 /* SecondViewController.swift in Sources */,
 				4538BB831AA6E9AB00C80B4B /* Db.swift in Sources */,
 				4597D9651AAA24ED00A453D7 /* FMResultSet.m in Sources */,
 				4597D9641AAA24ED00A453D7 /* FMDatabase.m in Sources */,
+				458F80DC1AAEE5E800EDDB3B /* ColorTool.swift in Sources */,
 				4538BB7E1AA5C4DB00C80B4B /* protocol.swift in Sources */,
 				4597D9661AAA24ED00A453D7 /* FMDatabaseQueue.m in Sources */,
 				4597D8731AA99D2E00A453D7 /* HistoryItem.swift in Sources */,
+				458F80D61AAEBF8400EDDB3B /* ChartViewController.swift in Sources */,
 				4597D9671AAA24ED00A453D7 /* FMDatabaseAdditions.m in Sources */,
-				4538BB881AA7653B00C80B4B /* date.swift in Sources */,
+				4538BB881AA7653B00C80B4B /* DateTool.swift in Sources */,
+				458F80D81AAED6CC00EDDB3B /* LineData.swift in Sources */,
 				45AC76E51A6C200600705474 /* AppDelegate.swift in Sources */,
 				459B66FF1AA4DE09007838F7 /* SelectDateController.swift in Sources */,
 				45FB5D481A794B24004F1759 /* AddViewController.swift in Sources */,
 				4597D8751AA9BEEC00A453D7 /* DayHistoryViewController.swift in Sources */,
 				4538BB811AA6E78B00C80B4B /* FeedLog.swift in Sources */,
+				4597D9701AAB3B3700A453D7 /* TypeTool.swift in Sources */,
 				45AC76E71A6C200600705474 /* FirstViewController.swift in Sources */,
 				4538BB851AA6F95600C80B4B /* LogDetail.swift in Sources */,
 				4597D9681AAA24ED00A453D7 /* FMDatabasePool.m in Sources */,
+				4597D9721AAB768A00A453D7 /* HistoryDayCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +527,7 @@
 		};
 		45AC77011A6C200600705474 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C81AD5E3E725CF8CD147E61 /* Pods-BabyLog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -451,6 +543,7 @@
 		};
 		45AC77021A6C200600705474 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F03C88175B86E57EB059782 /* Pods-BabyLog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
