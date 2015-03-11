@@ -40,19 +40,8 @@
 		45AC76EC1A6C200600705474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AC76EA1A6C200600705474 /* Main.storyboard */; };
 		45AC76EE1A6C200600705474 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AC76ED1A6C200600705474 /* Images.xcassets */; };
 		45AC76F11A6C200600705474 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45AC76EF1A6C200600705474 /* LaunchScreen.xib */; };
-		45AC76FD1A6C200600705474 /* BabyLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC76FC1A6C200600705474 /* BabyLogTests.swift */; };
 		45FB5D481A794B24004F1759 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB5D471A794B24004F1759 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		45AC76F71A6C200600705474 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 45AC76D71A6C200600705474 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 45AC76DE1A6C200600705474;
-			remoteInfo = BabyLog;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C81AD5E3E725CF8CD147E61 /* Pods-BabyLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyLog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabyLog/Pods-BabyLog.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,9 +87,6 @@
 		45AC76EB1A6C200600705474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45AC76ED1A6C200600705474 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		45AC76F01A6C200600705474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		45AC76F61A6C200600705474 /* BabyLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		45AC76FB1A6C200600705474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45AC76FC1A6C200600705474 /* BabyLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyLogTests.swift; sourceTree = "<group>"; };
 		45FB5D471A794B24004F1759 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		537CC5C4C50BBC8347E9B041 /* libPods-BabyLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabyLog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -112,13 +98,6 @@
 			files = (
 				4597D96B1AAA254900A453D7 /* libsqlite3.0.dylib in Frameworks */,
 				2DD9A876F80E80BC65270678 /* libPods-BabyLog.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		45AC76F31A6C200600705474 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +180,6 @@
 			children = (
 				4597D96A1AAA254900A453D7 /* libsqlite3.0.dylib */,
 				45AC76E11A6C200600705474 /* BabyLog */,
-				45AC76F91A6C200600705474 /* BabyLogTests */,
 				45AC76E01A6C200600705474 /* Products */,
 				26C362ECAABE876A9C43998E /* Pods */,
 				C8D5E46C540473D69690331B /* Frameworks */,
@@ -212,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				45AC76DF1A6C200600705474 /* BabyLog.app */,
-				45AC76F61A6C200600705474 /* BabyLogTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,8 +197,8 @@
 		45AC76E11A6C200600705474 /* BabyLog */ = {
 			isa = PBXGroup;
 			children = (
-				458F80DD1AAF4E7900EDDB3B /* Images */,
 				4538BB7F1AA6E75A00C80B4B /* Models */,
+				458F80DD1AAF4E7900EDDB3B /* Images */,
 				4597D96C1AAB39CC00A453D7 /* Services */,
 				4597D9691AAA250C00A453D7 /* dbfm */,
 				4538BB861AA7652200C80B4B /* Tools */,
@@ -246,23 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				45AC76E31A6C200600705474 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		45AC76F91A6C200600705474 /* BabyLogTests */ = {
-			isa = PBXGroup;
-			children = (
-				45AC76FC1A6C200600705474 /* BabyLogTests.swift */,
-				45AC76FA1A6C200600705474 /* Supporting Files */,
-			);
-			path = BabyLogTests;
-			sourceTree = "<group>";
-		};
-		45AC76FA1A6C200600705474 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				45AC76FB1A6C200600705474 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -297,24 +257,6 @@
 			productReference = 45AC76DF1A6C200600705474 /* BabyLog.app */;
 			productType = "com.apple.product-type.application";
 		};
-		45AC76F51A6C200600705474 /* BabyLogTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 45AC77031A6C200600705474 /* Build configuration list for PBXNativeTarget "BabyLogTests" */;
-			buildPhases = (
-				45AC76F21A6C200600705474 /* Sources */,
-				45AC76F31A6C200600705474 /* Frameworks */,
-				45AC76F41A6C200600705474 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				45AC76F81A6C200600705474 /* PBXTargetDependency */,
-			);
-			name = BabyLogTests;
-			productName = BabyLogTests;
-			productReference = 45AC76F61A6C200600705474 /* BabyLogTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -326,10 +268,6 @@
 				TargetAttributes = {
 					45AC76DE1A6C200600705474 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					45AC76F51A6C200600705474 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 45AC76DE1A6C200600705474;
 					};
 				};
 			};
@@ -347,7 +285,6 @@
 			projectRoot = "";
 			targets = (
 				45AC76DE1A6C200600705474 /* BabyLog */,
-				45AC76F51A6C200600705474 /* BabyLogTests */,
 			);
 		};
 /* End PBXProject section */
@@ -366,13 +303,6 @@
 				458F80E41AAF4F7A00EDDB3B /* chart.png in Resources */,
 				458F80E51AAF4F7A00EDDB3B /* chart@2x.png in Resources */,
 				45AC76EE1A6C200600705474 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		45AC76F41A6C200600705474 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,23 +372,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45AC76F21A6C200600705474 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45AC76FD1A6C200600705474 /* BabyLogTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		45AC76F81A6C200600705474 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 45AC76DE1A6C200600705474 /* BabyLog */;
-			targetProxy = 45AC76F71A6C200600705474 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		45AC76EA1A6C200600705474 /* Main.storyboard */ = {
@@ -588,40 +502,6 @@
 			};
 			name = Release;
 		};
-		45AC77041A6C200600705474 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BabyLogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyLog.app/BabyLog";
-			};
-			name = Debug;
-		};
-		45AC77051A6C200600705474 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BabyLogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyLog.app/BabyLog";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -639,15 +519,6 @@
 			buildConfigurations = (
 				45AC77011A6C200600705474 /* Debug */,
 				45AC77021A6C200600705474 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		45AC77031A6C200600705474 /* Build configuration list for PBXNativeTarget "BabyLogTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				45AC77041A6C200600705474 /* Debug */,
-				45AC77051A6C200600705474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
