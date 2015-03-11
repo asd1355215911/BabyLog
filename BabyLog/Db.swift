@@ -46,6 +46,4 @@ class Db{
         return feedlogDb
     }
     
-   
-    
 }
