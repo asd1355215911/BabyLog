@@ -13,6 +13,11 @@
 		4538BB831AA6E9AB00C80B4B /* Db.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BB821AA6E9AB00C80B4B /* Db.swift */; };
 		4538BB851AA6F95600C80B4B /* LogDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BB841AA6F95600C80B4B /* LogDetail.swift */; };
 		4538BB881AA7653B00C80B4B /* DateTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BB871AA7653B00C80B4B /* DateTool.swift */; };
+		4545C0311AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.47.13.png in Resources */ = {isa = PBXBuildFile; fileRef = 4545C02C1AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.47.13.png */; };
+		4545C0321AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4545C02D1AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.32.png */; };
+		4545C0331AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.42.png in Resources */ = {isa = PBXBuildFile; fileRef = 4545C02E1AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.42.png */; };
+		4545C0341AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.59.png in Resources */ = {isa = PBXBuildFile; fileRef = 4545C02F1AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.59.png */; };
+		4545C0351AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.47.07.png in Resources */ = {isa = PBXBuildFile; fileRef = 4545C0301AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.47.07.png */; };
 		458F80D61AAEBF8400EDDB3B /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F80D51AAEBF8400EDDB3B /* ChartViewController.swift */; };
 		458F80D81AAED6CC00EDDB3B /* LineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F80D71AAED6CC00EDDB3B /* LineData.swift */; };
 		458F80DC1AAEE5E800EDDB3B /* ColorTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F80DB1AAEE5E800EDDB3B /* ColorTool.swift */; };
@@ -51,6 +56,11 @@
 		4538BB821AA6E9AB00C80B4B /* Db.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Db.swift; sourceTree = "<group>"; };
 		4538BB841AA6F95600C80B4B /* LogDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDetail.swift; sourceTree = "<group>"; };
 		4538BB871AA7653B00C80B4B /* DateTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTool.swift; sourceTree = "<group>"; };
+		4545C02C1AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.47.13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 2015年3月12日 上午1.47.13.png"; sourceTree = "<group>"; };
+		4545C02D1AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 2015年3月12日 上午1.46.32.png"; sourceTree = "<group>"; };
+		4545C02E1AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 2015年3月12日 上午1.46.42.png"; sourceTree = "<group>"; };
+		4545C02F1AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.59.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 2015年3月12日 上午1.46.59.png"; sourceTree = "<group>"; };
+		4545C0301AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.47.07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot 2015年3月12日 上午1.47.07.png"; sourceTree = "<group>"; };
 		458F80D51AAEBF8400EDDB3B /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		458F80D71AAED6CC00EDDB3B /* LineData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineData.swift; sourceTree = "<group>"; };
 		458F80DB1AAEE5E800EDDB3B /* ColorTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTool.swift; sourceTree = "<group>"; };
@@ -135,6 +145,18 @@
 			name = Tools;
 			sourceTree = "<group>";
 		};
+		4545C0361AB0B7E10025D6DD /* ScreenShots */ = {
+			isa = PBXGroup;
+			children = (
+				4545C02C1AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.47.13.png */,
+				4545C02D1AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.32.png */,
+				4545C02E1AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.42.png */,
+				4545C02F1AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.59.png */,
+				4545C0301AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.47.07.png */,
+			);
+			name = ScreenShots;
+			sourceTree = "<group>";
+		};
 		458F80DD1AAF4E7900EDDB3B /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +219,7 @@
 		45AC76E11A6C200600705474 /* BabyLog */ = {
 			isa = PBXGroup;
 			children = (
+				4545C0361AB0B7E10025D6DD /* ScreenShots */,
 				4538BB7F1AA6E75A00C80B4B /* Models */,
 				458F80DD1AAF4E7900EDDB3B /* Images */,
 				4597D96C1AAB39CC00A453D7 /* Services */,
@@ -296,11 +319,16 @@
 			files = (
 				458F80F01AAF52DE00EDDB3B /* main.png in Resources */,
 				458F80EC1AAF515100EDDB3B /* history.png in Resources */,
+				4545C0351AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.47.07.png in Resources */,
 				45AC76EC1A6C200600705474 /* Main.storyboard in Resources */,
 				458F80F11AAF52DE00EDDB3B /* main@2x.png in Resources */,
+				4545C0331AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.42.png in Resources */,
+				4545C0321AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.32.png in Resources */,
 				45AC76F11A6C200600705474 /* LaunchScreen.xib in Resources */,
 				458F80ED1AAF515100EDDB3B /* history@2x.png in Resources */,
+				4545C0341AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.46.59.png in Resources */,
 				458F80E41AAF4F7A00EDDB3B /* chart.png in Resources */,
+				4545C0311AB0B79E0025D6DD /* iOS Simulator Screen Shot 2015年3月12日 上午1.47.13.png in Resources */,
 				458F80E51AAF4F7A00EDDB3B /* chart@2x.png in Resources */,
 				45AC76EE1A6C200600705474 /* Images.xcassets in Resources */,
 			);
